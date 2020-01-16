@@ -6,8 +6,17 @@ import com.suchorab.enums.Examples;
 public class Main {
 
     public static void main(String[] args) {
+        startApplication(Examples.FIRST);
+        startApplication(Examples.SECOND);
+        startApplication(Examples.THIRD);
+        startApplication(Examples.FOURTH);
+        startApplication(Examples.FIFTH);
+        startApplication(Examples.SIXTH);
+    }
+
+    private static void  startApplication(Examples example){
         System.out.println("----- START -----");
-        String values = Examples.FIRST.getValue();
+        String values = example.getValue();
         int[][] tab = putValueToTable(values);
         int n = tab.length;
         long start = System.nanoTime();
