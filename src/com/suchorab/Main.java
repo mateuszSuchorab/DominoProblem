@@ -14,7 +14,7 @@ public class Main {
         startApplication(Examples.SIXTH);
     }
 
-    private static void  startApplication(Examples example){
+    private static void startApplication(Examples example) {
         System.out.println("----- START -----");
         String values = example.getValue();
         int[][] tab = putValueToTable(values);
